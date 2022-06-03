@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lan ="en" and dir="Itr">
+<head>
+    <meta charset="utf-8">
+    <title> Interactive Login Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #24244f;
+            background-size: cover;
+        }
+        .box{
+            width: 300px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+        }
+        .box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+
+        }
+        .box input[type="text"],.box input[type="password"] {
+            border: 0;
+            background: none;
+            display:block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #0367fd;
+            padding: 14px 10px;
+            width: 220px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25px;
+        }
+        .box input[type="text"]:hover,.box input[type="password"]:hover {
+            width:270px;
+            border-color: #ffc400ec;
+        }
+        .box input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid #ffc400ec;
+            padding: 14px 10px;
+            width: 220px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition:0.25px;
+            cursor: pointer;
+        }
+        .box input[type="submit"]:hover{
+            background: #ffc400ec;
+        }
+    </style>
+
+
+</head>
+<body>
+    <form class = "box" action = "login.html" method ="POST">
+        <h1>Login</h1>
+        <input type="text" name="" placeholder="Enter Username" id ="username">
+        <input type="password" name="" placeholder="Enter Password" id="password">
+        <input type="submit" name="" value="Login" onclick="validate()">
+
+    </form>
+<script>
+    function validate()
+    {
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+
+        if (username =="scientist" && password == "MadScientist123"){
+            alert("login successful. Flag: WiofhFi12e4F");
+            return false;
+        } else {
+            alert("login unsuccessful. try again.");
+        }
+    }
+</script>
+</body>
+</html>
