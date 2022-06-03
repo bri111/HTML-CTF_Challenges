@@ -2,6 +2,7 @@
 <html lan ="en" and dir="Itr">
 <head>
     <meta charset="utf-8">
+    <script src="login.js"></script>
     <title> Interactive Login Form</title>
     <style>
         body{
@@ -71,23 +72,10 @@
     <form class = "box" action = "login.html" method ="POST">
         <h1>Login</h1>
         <input type="text" name="" placeholder="Enter Username" id ="username">
-        <input type="password" name="" placeholder="Enter Password" id="password">
-        <input type="submit" name="" value="Login" onclick="validate()">
+        <input type="password" name="scientist" placeholder="Enter Password" id="password">
+        <input type="submit" name="MadScientist123" value="Login" onclick="validate()">
 
     </form>
-<script>
-    function validate()
-    {
-        var username=document.getElementById("username").value;
-        var password=document.getElementById("password").value;
 
-        if (username =="scientist" && password == "MadScientist123"){
-            alert("login successful. Flag: WiofhFi12e4F");
-            return false;
-        } else {
-            alert("login unsuccessful. try again.");
-        }
-    }
-</script>
 </body>
 </html>
